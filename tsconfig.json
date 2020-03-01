@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
-    "incremental": true,
+    "incremental": false,
     "noEmit": true,
     "target": "es5",
-    "module": "esnext", //commonjs destroys 'dynamic imports' which is used for code splitting
+    "module": "esnext",
     "noImplicitAny": false,
     "preserveConstEnums": true,
-    "baseUrl": "./app",
-    "jsx": "react", // process JSX
+    "baseUrl": "./src",
+    "jsx": "react",
     "lib": ["dom", "es5", "es6", "es7", "es2017"],
-    "allowSyntheticDefaultImports": true, // no errors with commonjs modules interop
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "allowJs": true, // include js files
+    "allowJs": true,
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -26,7 +26,9 @@
     "strictFunctionTypes": false,
     "pretty": true,
     "removeComments": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "typeRoots": ["node_modules/@types"],
+    "types": ["react", "jest"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
