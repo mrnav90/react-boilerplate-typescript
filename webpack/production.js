@@ -74,7 +74,7 @@ const webpackConfig = {
         },
       },
     },
-    nodeEnv: 'production',
+    nodeEnv: process.env.NODE_ENV,
     sideEffects: true,
     concatenateModules: true,
     minimizer: [
