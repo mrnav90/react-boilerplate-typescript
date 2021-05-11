@@ -73,7 +73,7 @@
     "jquery": "^3.4.1",
     "ladda": "^2.0.1",
     "lint-staged": "^10.0.8",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.28",
     "normalize.css": "^8.0.1",
